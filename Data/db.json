@@ -166,7 +166,6 @@
       "bestSeller": true
     }
   ],
-
   "featuredProducts": [
     {
       "id": 1001,
@@ -202,5 +201,12 @@
       "bestSeller": true
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "anamshrestha1@gmail.com",
+      "password": "$2a$10$8ajXvmhX9A5aqO25LllpHOk7LqXrNQbduHjasSZXA3azOrlGujejC",
+      "name": "Swastika Shrestha",
+      "id": 1
+    }
+  ]
 }

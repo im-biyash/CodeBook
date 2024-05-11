@@ -15,5 +15,14 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "user":[
+    {
+      "id":1,
+      "name": "byash",
+      "email": "mail@gmail.com",
+      "password": "password.value"
+    }
+  ]
+
 }
