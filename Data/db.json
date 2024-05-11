@@ -1,0 +1,206 @@
+{
+  "products": [
+    {
+      "id": 1001,
+      "name": "Basics to Advance in ReactJS",
+      "overview": "Will cover beginner-friendly ReactJS course from beginning to advance with a lot of projects and real-life projects.",
+      "price": 29,
+      "image": "/assets/images/img1.avif",
+      "rating": 5,
+      "inStock": true,
+      "size": 5,
+      "bestSeller": true
+    },
+    {
+      "id": 1002,
+      "name": "Mastering Redux",
+      "overview": "Comprehensive course on Redux state management for complex React applications.",
+      "price": 39,
+      "image": "/assets/images/img2.avif",
+      "rating": 3,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": false
+    },
+    {
+      "id": 1003,
+      "name": "React Hooks in Practice",
+      "overview": "Hands-on guide to using React Hooks for stateful logic and side effects.",
+      "price": 19,
+      "image": "/assets/images/img3.avif",
+      "rating": 4.5,
+      "inStock": false,
+      "size": 3,
+      "bestSeller": true
+    },
+    {
+      "id": 1004,
+      "name": "Advanced React Patterns",
+      "overview": "Learn advanced React patterns and techniques for building scalable and maintainable applications.",
+      "price": 49,
+      "image": "/assets/images/img4.avif",
+      "rating": 1,
+      "inStock": true,
+      "size": 5,
+      "bestSeller": false
+    },
+    {
+      "id": 1005,
+      "name": "Optimizing React Performance",
+      "overview": "Optimize React applications for speed and performance using best practices and tools.",
+      "price": 35,
+      "image": "/assets/images/img5.avif",
+      "rating": 3,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": true
+    },
+    {
+      "id": 1006,
+      "name": "Testing React Applications",
+      "overview": "Comprehensive guide to testing React components and applications using various testing libraries and tools.",
+      "price": 29,
+      "image": "/assets/images/img6.avif",
+      "rating": 2,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": false
+    },
+    {
+      "id": 1007,
+      "name": "React Native Development",
+      "overview": "Learn to build native mobile applications using React Native framework.",
+      "price": 45,
+      "image": "/assets/images/img7.avif",
+      "rating": 4.5,
+      "inStock": true,
+      "size": 5,
+      "bestSeller": false
+    },
+    {
+      "id": 1008,
+      "name": "Server-side Rendering with React",
+      "overview": "Implement server-side rendering (SSR) in React applications for improved performance and SEO.",
+      "price": 39,
+      "image": "/assets/images/img8.avif",
+      "rating": 4,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": false
+    },
+    {
+      "id": 1009,
+      "name": "Building Scalable React Applications",
+      "overview": "Learn strategies and techniques for building scalable React applications that can handle large amounts of data and users.",
+      "price": 49,
+      "image": "/assets/images/img9.avif",
+      "rating": 5,
+      "inStock": true,
+      "size": 5,
+      "bestSeller": true
+    },
+    {
+      "id": 1010,
+      "name": "React and TypeScript",
+      "overview": "Combine the power of React with the safety and scalability of TypeScript for building robust web applications.",
+      "price": 42,
+      "image": "/assets/images/img10.avif",
+      "rating": 4.9,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": true
+    },
+    {
+      "id": 1011,
+      "name": "Advanced State Management with Recoil",
+      "overview": "Explore Recoil library for advanced state management in React applications.",
+      "price": 32,
+      "image": "/assets/images/img11.avif",
+      "rating": 3,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": false
+    },
+    {
+      "id": 1012,
+      "name": "Building Progressive Web Apps (PWAs) with React",
+      "overview": "Learn to build Progressive Web Apps using React for improved user experience and engagement.",
+      "price": 37,
+      "image": "/assets/images/img12.avif",
+      "rating": 4,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": true
+    },
+    {
+      "id": 1013,
+      "name": "GraphQL with React",
+      "overview": "Learn to integrate GraphQL with React applications for efficient data fetching and management.",
+      "price": 45,
+      "image": "/assets/images/img13.avif",
+      "rating": 4.7,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": true
+    },
+    {
+      "id": 1014,
+      "name": "React Performance Optimization",
+      "overview": "Optimize the performance of React applications by implementing performance best practices and optimizations.",
+      "price": 39,
+      "image": "/assets/images/img14.avif",
+      "rating": 4,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": false
+    },
+    {
+      "id": 1015,
+      "name": "React Design Patterns",
+      "overview": "Explore common design patterns and best practices for building React applications that are scalable, maintainable, and easy to understand.",
+      "price": 35,
+      "image": "/assets/images/img15.avif",
+      "rating": 4,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": true
+    }
+  ],
+
+  "featuredProducts": [
+    {
+      "id": 1001,
+      "name": "Basics to Advance in ReactJS",
+      "overview": "Will cover beginner-friendly ReactJS course from beginning to advance with a lot of projects and real-life projects.",
+      "price": 29,
+      "image": "/assets/images/img4.avif",
+      "rating": 5,
+      "inStock": true,
+      "size": 5,
+      "bestSeller": true
+    },
+    {
+      "id": 1002,
+      "name": "Mastering Redux",
+      "overview": "Comprehensive course on Redux state management for complex React applications.",
+      "price": 39,
+      "image": "/assets/images/img5.avif",
+      "rating": 4,
+      "inStock": true,
+      "size": 4,
+      "bestSeller": false
+    },
+    {
+      "id": 1003,
+      "name": "React Hooks in Practice",
+      "overview": "Hands-on guide to using React Hooks for stateful logic and side effects.",
+      "price": 19,
+      "image": "/assets/images/img6.avif",
+      "rating": 3,
+      "inStock": false,
+      "size": 3,
+      "bestSeller": true
+    }
+  ],
+  "users": []
+}
