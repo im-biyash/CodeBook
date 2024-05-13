@@ -2,7 +2,7 @@ import React from 'react'
 
 const DropDownLoggedin = () => {
   return (
-    <div id="dropdown" className="select-none absolute top-10 right-0 z-10 w-44">
+    <div id="dropdown" className="select-none absolute top-8 right-0 z-10 w-44">
       <div>
         <div>bsstha21@GMAIL.COM</div>
       </div>
