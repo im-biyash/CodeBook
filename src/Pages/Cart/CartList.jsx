@@ -6,7 +6,7 @@ const CartList = () => {
 
     <section className='text-3xl'>
  <p className='text-2xl text-center font-semibold dar:text-slate-100 my-10 underline'>
-    My cart {2}
+    My cart: {2}
  </p>
     </section>
     <section>
@@ -16,10 +16,10 @@ const CartList = () => {
       <div className='flex flex-col p-2 border-b dar:border-slate-700 text-lg '>
         <p>
             <span>
-
+    Total Amount:
             </span>
             <span>
-
+$99
             </span>
         </p>
       </div>
