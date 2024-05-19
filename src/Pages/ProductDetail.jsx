@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Rating from "../Components/Rating";
 
+
 const ProductDetail = () => {
   const [product, setProduct] = useState({});
   const { id } = useParams();
+  
 
+
+  
   useEffect(() => {
     const fetchProduct = async () => {
       try {
@@ -55,8 +59,8 @@ const ProductDetail = () => {
           <p className="text-lg text-gray-700 mt-2 mb-4">{overview}</p>
 
           <div className="flex justify-between items-center">
-            <button className="bg-green-600 text-white py-2 px-6 rounded-lg">
-              Add to Cart
+            <button onClick={handleCartToggle} className= "p-2 px-4 rounded-lg  text-white  bg-green-600 text-white">
+               Add to cart
             </button>
           </div>
         </div>
