@@ -14,12 +14,7 @@ const DropDownLoggedin = ({ setDropdown }) => {
   }, []);
   
 
-  const handleLogout = () => {
-    sessionStorage.removeItem('token');
-    sessionStorage.removeItem('cbid');
-    sessionStorage.removeItem('email');
-    navigate('/');
-  };
+  
 
   return (
     <div id="dropdown" className="select-none absolute top-11 right-0 z-10 w-43 dark:bg-slate-800">
