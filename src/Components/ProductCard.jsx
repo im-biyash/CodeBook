@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
   const { id, name, overview, price, image, rating } = product;
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.cart);
-  const isInCart = cart.some(item => item.id === id);
+  const isInCart = cart.some(item => item.id.toString() === id.toString());
 
   const handleCartToggle = () => {
     if (isInCart) {
@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 dark:bg-slate-800 dark:text-white">
+    <div className="max-w-sm mt-13 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 dark:bg-slate-800 dark:text-white">
       <Link to={`/products/${id}`}>
         <img className="rounded-t-lg w-full h-64" src={image} alt={name} />
       </Link>
