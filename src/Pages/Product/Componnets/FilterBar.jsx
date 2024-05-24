@@ -29,7 +29,7 @@ const FilterBar = ({ handleSort, close, setRating, setBestSeller, setInStock }) 
   }
 
   return (
-    <div className="filter-bar bg-white h-screen fixed top-0 left-0 w-[20%] text-black">
+    <div className="filter-bar bg-white h-screen w-[25%] fixed top-0 left-0 w-[50%] text-black dark:bg-slate-800 dark:text-slate-100 lg:w-[25%]">
       <div className='flex justify-around'>
         <h1 className='text-3xl text-center'>FilterBar</h1>
         <button className='mt-2' onClick={() => close(!close)}>Close</button>
@@ -121,7 +121,7 @@ const FilterBar = ({ handleSort, close, setRating, setBestSeller, setInStock }) 
       </div>
 
       <div className="close">
-        <button onClick={clearFilter}>Clear filter</button>
+        <button className='mt-2 bg-red-500 p-1 rounded-lg ml-8' onClick={clearFilter}>Clear filter</button>
       </div>
     </div>
   );
