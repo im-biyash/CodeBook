@@ -47,7 +47,7 @@ const Header = () => {
             <IoMdSearch className="text-black dark:text-white" onClick={() => setShowSearch(!showSearch)} />
             <div className="relative">
               <FaCartArrowDown onClick={Opencart} className="text-black dark:text-white" />
-              {cartlength ? (
+              {cartlength && token ? (
                 <span className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-red-400 text-white rounded-full px-2 text-xs">
                   {cartlength}
                 </span>
