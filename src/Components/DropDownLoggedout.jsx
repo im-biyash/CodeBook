@@ -3,7 +3,7 @@ import {Link } from "react-router-dom";
 
 const DropDownLoggedout = ({setDropdown}) => {
   return (
-    <div className="select-none absolute top-11 right-0 z-10 w-40 bg-white dark:bg-gray-700">
+    <div className="select-none absolute top-10 right-0 z-10 w-40 bg-white dark:bg-gray-700">
       <ul>
         <li>
           <Link onClick = {() => setDropdown(false)} to="/products" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >All Ebooks</Link>
