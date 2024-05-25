@@ -5,6 +5,12 @@ const DropDownLoggedin = ({ setDropdown }) => {
   const [email, setEmail] = useState('');
   const navigate = useNavigate();
 
+  const handleLogout = () => {
+    // Clear the session storage if needed
+    sessionStorage.removeItem('email');
+    navigate('/login');
+  };
+
   useEffect(() => {
     const userEmail = sessionStorage.getItem('email');
     console.log("Retrieved email from session storage:", userEmail); // This should log the email
@@ -12,12 +18,9 @@ const DropDownLoggedin = ({ setDropdown }) => {
       setEmail(userEmail);
     }
   }, []);
-  
-
-  
 
   return (
-    <div id="dropdown" className="select-none absolute top-11 right-0 z-10 w-43 dark:bg-slate-800">
+    <div id="dropdown" className="select-none absolute top-11 right-0 z-10 w-43 bg-gray-300 dark:bg-slate-800">
       <div>
         <p className='text-white'>{email}</p>
       </div>
@@ -27,14 +30,10 @@ const DropDownLoggedin = ({ setDropdown }) => {
             All Ebooks
           </Link>
         </li>
-        <li>
-          <Link onClick={() => setDropdown(false)} to="/dashboard" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-            Dashboard
-          </Link>
-        </li>
+        
       </ul>
       <div className="py-1">
-        <span className='ml-4 cursor-pointer text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white' onClick={handleLogout}>
+        <span className='ml-4 text-xl cursor-pointer block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white' onClick={handleLogout}>
           Logout
         </span>
       </div>

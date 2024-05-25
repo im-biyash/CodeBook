@@ -53,7 +53,7 @@ const ProductList = () => {
           <span className="text-2xl font-semibold mb-5 dark:text-slate-100">
             All eBooks ({filteredProducts.length})
           </span>
-          <span>
+          <span className="mt-3 lg:mt-0 lg:mr-40">
             <button
               id="dropdownMenuIconButton"
               type="button"

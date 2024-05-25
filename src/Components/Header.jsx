@@ -51,7 +51,7 @@ const Header = () => {
                 ""
               )}
             </div>
-            <MdAccountBox className="text-black dark:text-white" onClick={() => setDropdown(!dropdown)} />
+            <MdAccountBox className="text-black dark:text-white " onClick={() => setDropdown(!dropdown)} />
             {dropdown && (token ? <DropDownLoggedIn setDropdown={setDropdown} /> : <DropDownLoggedout setDropdown={setDropdown} />)}
           </div>
         </div>

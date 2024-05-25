@@ -5,6 +5,9 @@ import Cartcard from './Cartcard';
 const CartList = () => {
   const cartlist = useSelector((state) => state.cart.cart);
   const totalAmount = useSelector((state) => state.cart.total);
+  const handleOrder = () =>{
+    alert("this is demo site so u cant place order..");
+  }
 
   return (
     <>
@@ -26,7 +29,7 @@ const CartList = () => {
           </p>
         </div>
         <div className='text-right my-5'>
-          <button className='bg-green-600 text-white py-2 px-6 rounded-lg'>
+          <button className='bg-green-600 text-white py-2 px-6 rounded-lg' onClick={handleOrder}>
             Place Order
           </button>
         </div>

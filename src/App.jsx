@@ -10,6 +10,7 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import CartPage from './Pages/Cart/CartPage';
 import ProtectedRoute from './Pages/ProtectedRoute';
+
 const App = () => {
  
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          
         <Route path='/cart' element= {<ProtectedRoute><CartPage /></ProtectedRoute>} />
 
         </Routes>

@@ -36,6 +36,36 @@ const Login = () => {
       console.error("Error:", error);
     }
   };
+  const handleGuestLogin = async () => {
+    const guestEmail = "bs12@gmail.com";
+    const guestPassword = "1234";
+    const authDetail = {
+      email: guestEmail,
+      password: guestPassword,
+    };
+
+    try {
+      const response = await fetch("http://localhost:3001/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(authDetail),
+      });
+      const data = await response.json();
+
+      if (data.accessToken) {
+        alert("Login successful");
+        sessionStorage.setItem("token", JSON.stringify(data.accessToken));
+        sessionStorage.setItem("cbid", JSON.stringify(data.user.id));
+        navigate("/products");
+      } else {
+        alert("Login failed");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -86,6 +116,12 @@ const Login = () => {
             Login
           </button>
         </form>
+        <button
+            type="submit" onClick={handleGuestLogin}
+            className="bg-purple-600 text-white text-lg w-[50%] text-center mx-auto h-12 p-2 rounded-lg relative left-[400px]"
+          >
+            Login as Guest
+          </button>
       </main>
     </div>
   );
