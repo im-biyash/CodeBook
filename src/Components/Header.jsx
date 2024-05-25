@@ -56,7 +56,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      {showSearch && <Search />}
+      {showSearch && <Search  setShowSearch={setShowSearch} />}
     </>
   );
 };

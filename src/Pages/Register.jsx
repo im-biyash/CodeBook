@@ -1,21 +1,30 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const navigate = useNavigate(); // Corrected typo here
 
   async function handleRegister(event) {
     event.preventDefault();
-    const { name, email, password } = event.target.elements;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    if (!emailRegex.test(email)) {
+      setEmailError("Please enter a valid email address");
+      return;
+    }    
+    setEmailError("");
     const authDetail = {
-      name: name.value,
-      email: email.value,
-      password: password.value,
+      name,
+      email,
+      password,
     };
 
     try {
-      const response = await fetch("https://localhost:3001/users", {
+      const response = await fetch("http://localhost:3001/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -32,6 +41,11 @@ const Register = () => {
 
       if (data.accessToken) {
         alert("Registration successful");
+        navigate("/products");
+        sessionStorage.setItem("token", JSON.stringify(data.accessToken));
+        sessionStorage.setItem("cbid", JSON.stringify(data.user.id));
+  
+        
       } else {
         throw new Error("Failed to retrieve access token");
       }
@@ -66,7 +80,7 @@ const Register = () => {
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="dark:bg-gray-600 w-full h-12 p-2 rounded-lg"
+              className="dark:bg-gray-600 dark:text-white w-full h-12 p-2 rounded-lg"
               placeholder="Enter your name"
             />
           </div>
@@ -84,11 +98,12 @@ const Register = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="dark:bg-gray-600 w-full h-12 p-2 rounded-lg"
+              className="dark:bg-gray-600 dark:text-white w-full h-12 p-2 rounded-lg"
               placeholder="Enter your email"
             />
+            {emailError && <p className="dark:text-red-500">{emailError}</p>}
           </div>
-          <div className="mb-6">
+          <div className="mb-6 p-2">
             <label
               htmlFor="password"
               className="block text-xl mb-2 p-2 dark:text-slate-100"
@@ -101,7 +116,7 @@ const Register = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="dark:bg-gray-600 w-full h-12 p-2 rounded-lg"
+              className="dark:bg-gray-600 dark:text-white w-full h-12 p-2 rounded-lg"
               placeholder="Enter your password"
             />
           </div>

@@ -24,7 +24,7 @@
     },
     {
       "id": 1003,
-      "name": "React Hooks in Practice",
+      "name": "javascript mastery",
       "overview": "Hands-on guide to using React Hooks for stateful logic and side effects.",
       "price": 19,
       "image": "/assets/images/img3.avif",
@@ -35,7 +35,7 @@
     },
     {
       "id": 1004,
-      "name": "Advanced React Patterns",
+      "name": "django development",
       "overview": "Learn advanced React patterns and techniques for building scalable and maintainable applications.",
       "price": 49,
       "image": "/assets/images/img4.avif",
@@ -46,7 +46,7 @@
     },
     {
       "id": 1005,
-      "name": "Optimizing React Performance",
+      "name": "machine learning",
       "overview": "Optimize React applications for speed and performance using best practices and tools.",
       "price": 35,
       "image": "/assets/images/img5.avif",
@@ -57,7 +57,7 @@
     },
     {
       "id": 1006,
-      "name": "Testing React Applications",
+      "name": "Testing React Components",
       "overview": "Comprehensive guide to testing React components and applications using various testing libraries and tools.",
       "price": 29,
       "image": "/assets/images/img6.avif",
@@ -166,7 +166,6 @@
       "bestSeller": true
     }
   ],
-
   "featuredProducts": [
     {
       "id": 1001,
@@ -202,5 +201,54 @@
       "bestSeller": true
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "bsstha21@gmail.com",
+      "password": "$2a$10$7Zh2lwgIFUaudxbtD3nF/OdlqjTtMZy5LsEox7uGavZ7E73KgzBeu",
+      "name": "bibek",
+      "id": 1
+    },
+    {
+      "email": "aman12@gmial.com",
+      "password": "$2a$10$5QoNdLIYScdhvVtPP22OquzNDyNRGMPFWtEbK..86DmxHUUK8djQy",
+      "name": "aman",
+      "id": 2
+    },
+    {
+      "email": "aman12@gmail.com",
+      "password": "$2a$10$REX.e/Co/1YuRTmhUEUZ2.vA5OqwIkyriOzB329nKA53mpwhyyhwa",
+      "name": "anish",
+      "id": 3
+    },
+    {
+      "email": "ram12@gmail.com",
+      "password": "$2a$10$obm07h2B8.ymUm33FuXOyOLmY3.EN1CM8EX7kKlHx92RoxE06pEcm",
+      "name": "ram",
+      "id": 4
+    },
+    {
+      "email": "ram11@gmail.com",
+      "password": "$2a$10$AEyzO6V4foyuh2u/lfdfTuq0QL/Pmk6J2cnxgrchzJvIRH8zQltYy",
+      "name": "ram",
+      "id": 5
+    },
+    {
+      "email": "prijal12@gmail.com",
+      "password": "$2a$10$pu9g8v.R0KhKeXE/8.880eWNTSmPcijWf4rJS6xNtvT7I/Xy7jQvy",
+      "name": "prijal",
+      "id": 6
+    },
+    {
+      "email": "bs12@gmail.com",
+      "password": "$2a$10$F2fDiqmWigEyLawbaSroxOfSpqSht7P31tPmOwqN3eZX.utHuqo2e",
+      "name": "biyash",
+      "id": 7
+    },
+    {
+      "email": "bs10@gmail.com",
+      "password": "$2a$10$ks50INp0NRfBJs0.4abJ7epQBP3K5YD375lIsTDHDhjM9YR0yBkKu",
+      "name": "biyash",
+      "id": 8
+    }
+  ]
 }

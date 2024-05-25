@@ -8,7 +8,10 @@ import ProductDetail from './Pages/ProductDetail';
 import ScrollTotop from './Components/ScrollTotop';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import CartPage from './Pages/Cart/CartPage';
+import ProtectedRoute from './Pages/ProtectedRoute';
 const App = () => {
+ 
   return (
     <div className='dark:bg-slate-800'>
       <Router>
@@ -21,7 +24,7 @@ const App = () => {
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          
+        <Route path='/cart' element= {<ProtectedRoute><CartPage /></ProtectedRoute>} />
 
         </Routes>
       </Router>
