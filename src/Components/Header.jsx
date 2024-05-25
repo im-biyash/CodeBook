@@ -19,7 +19,11 @@ const Header = () => {
   const cartlength = cart.length;
 
   const Opencart = () => {
-    navigate('/cart');
+    if (token) {
+      navigate('/cart');
+    } else {
+      alert('You must log in first');
+    }
   };
 
   useEffect(() => {
