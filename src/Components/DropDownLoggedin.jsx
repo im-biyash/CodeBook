@@ -9,6 +9,7 @@ const DropDownLoggedin = ({ setDropdown }) => {
     // Clear the session storage if needed
     sessionStorage.removeItem('email');
     navigate('/login');
+    setDropdown(false);
   };
 
   useEffect(() => {
