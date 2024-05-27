@@ -25,7 +25,7 @@ const DropDownLoggedin = ({ setDropdown }) => {
       <div>
         <p className='text-white'>{email}</p>
       </div>
-      <ul className='py-1 text-xl text-gray-700 dark:text-gray-200'>
+      <ul className='py-1 text-2xl text-gray-700 dark:text-gray-200'>
         <li>
           <Link onClick={() => setDropdown(false)} to="/products" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
             All Ebooks
